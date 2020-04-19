@@ -12,6 +12,12 @@ Andres Lozano     20201099038
 ## 1. DEFINICIONES
 ### ¿Que es un Microservicio?
 
+Según James Lewis y Martin Fowler (los creadores del concepto) los microservicios son un enfoque para desarrollar una única aplicación como un conjunto de pequeños servicios, cada uno ejecutándose en su propio proceso y comunicándose con mecanismos ligeros, a menudo una API a través de HTTP.
+
+Estos servicios se desarrollan alrededor de capacidades de negocio y se pueden implementar de forma independiente y completamente automatizada. Existe un mínimo de administración centralizada de estos servicios, que puede escribirse en diferentes lenguajes de programación y utilizando diferentes tecnologías de almacenamiento de datos.
+
+Los microservicios se adaptan perfectamente a los requerimientos de agilidad, escalabilidad y confiabilidad de las aplicaciones modernas en la nube.
+
 ### FLASK
 
 Flask es auto denominado como un microframework de python para crear aplicaciones web, es decir, páginas web dinamicas, APIs, etc .
@@ -135,4 +141,5 @@ Para finalizar se podrá ver todos los contenedores en Docker funcionado correct
 Figura 14. Contenedores creados en Docker
 
 
-
+Referencias Web
+http://www.arquitectoit.com/postman/que-es-postman/
