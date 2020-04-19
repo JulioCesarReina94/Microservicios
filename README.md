@@ -1,10 +1,10 @@
 Integrantes: 
 
-Julio Cesar Reina
+Julio Cesar Reina   20201099045
 
-Cristian Gonzales
+Cristian Gonzales   20201099032
 
-Andres Lozano     20201099038
+Andres Lozano       20201099038
 
 # Microservicios
 
@@ -20,9 +20,9 @@ Los microservicios se adaptan perfectamente a los requerimientos de agilidad, es
 
 ### FLASK
 
-Flask es auto denominado como un microframework de python para crear aplicaciones web, es decir, páginas web dinamicas, APIs, etc .
+Flask es auto denominado como un microframework de python para crear aplicaciones web, es decir, páginas web dinamicas, APIs, etc. Una de las principales características de Flask es que se pueden crear aplicaciones web rápidamente y con un mínimo número de líneas de código.
 
-### DOCKER
+### DOCKER (Configuration Service)
 
 Docker es una plataforma de software que le permite crear, probar e implementar aplicaciones rápidamente. Docker empaqueta software en unidades estandarizadas llamadas contenedores que incluyen todo lo necesario para que el software se ejecute, incluidas bibliotecas, herramientas de sistema, código y tiempo de ejecución. Con Docker, puede implementar y ajustar la escala de aplicaciones rápidamente en cualquier entorno con la certeza de saber que su código se ejecutará.
 
