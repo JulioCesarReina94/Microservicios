@@ -22,7 +22,9 @@ Los microservicios se adaptan perfectamente a los requerimientos de agilidad, es
 
 Flask es auto denominado como un microframework de python para crear aplicaciones web, es decir, páginas web dinamicas, APIs, etc. Una de las principales características de Flask es que se pueden crear aplicaciones web rápidamente y con un mínimo número de líneas de código.
 
-### CONFIGURATION SERVICE (DOCKER)
+### CONFIGURATION SERVICE
+
+#### DOCKER
 
 Docker es una plataforma de software que le permite crear, probar e implementar aplicaciones rápidamente. Docker empaqueta software en unidades estandarizadas llamadas contenedores que incluyen todo lo necesario para que el software se ejecute, incluidas bibliotecas, herramientas de sistema, código y tiempo de ejecución. Con Docker, puede implementar y ajustar la escala de aplicaciones rápidamente en cualquier entorno con la certeza de saber que su código se ejecutará.
 
@@ -81,21 +83,27 @@ Tyk está compuesto por 3 piezas:
 
 -Pump: Es el encargado de persistir los datos de las métricas y exportarlas a MongoDB (instalación de serie), ElasticSearch, InfluxDB entre otros.
 
-#### Balanceo de carga (Load balancer)
+### BALANCEO DE CARGA 
 
-Kong: Kong proporciona múltiples formas de solicitudes de equilibrio de carga a múltiples servicios de back-end: un método directo basado en DNS y un equilibrador de anillo más dinámico que también permite el registro del servicio sin necesidad de un servidor DNS
+#### Kong: 
 
-Ribbon: Parte del stack tecnológico de Netflix OSS. El cual permite realizar el balanceo de carga por medio de Eureka.
+Kong proporciona múltiples formas de solicitudes de equilibrio de carga a múltiples servicios de back-end: un método directo basado en DNS y un equilibrador de anillo más dinámico que también permite el registro del servicio sin necesidad de un servidor DNS
 
-Nginx: pronunciado como “engine-ex”, es un servidor web de código abierto que, desde su éxito inicial como servidor web, ahora también es usado como proxy inverso, caché de HTTP, y balanceador de carga.
+#### Ribbon: 
 
-#### Centralización de logs
+Parte del stack tecnológico de Netflix OSS. El cual permite realizar el balanceo de carga por medio de Eureka.
 
-Fluentd
+#### Nginx: 
+
+Pronunciado como “engine-ex”, es un servidor web de código abierto que, desde su éxito inicial como servidor web, ahora también es usado como proxy inverso, caché de HTTP, y balanceador de carga.
+
+### Centralización de logs
+
+#### Fluentd
 
 Es un recolector de datos, es decir, se dedica a buscar y recoger toda la información que generan las diferentes aplicaciones de tu sistema. Su principal característica es la conexión de distintas fuentes de datos con múltiples destinos (desde bases de datos a servicios web, otros ficheros, etc.).
 
-Graylog
+#### Graylog
 
 Es una solución de software de código abierto para el almacenamiento y visualización de los logs generados. Permite, además, realizar consultas sobre los datos, crear cuadros de mando, alarmas y muchas otras funcionalidades interesantes en entornos de TI y programación. Se compone de tres componentes fundamentales:
 
@@ -105,9 +113,9 @@ Es una solución de software de código abierto para el almacenamiento y visuali
 
 - Graylog Server: Es el propio servidor de Graylog que incluye todas sus funcionalidades y una interfaz de usuario web (Graylog UI).
 
-### Servidor de Autorización
+### SERVIDOR DE AUTORIZACION
 
-Plugin LDAP Authentication (KONG)
+#### Plugin LDAP Authentication (KONG)
 
 Es un plugin de kong que permite implementar el servicio de autorización, este permite verificar las credenciales válidas en el encabezado, es compatible con solicitudes de los protocolos http y https.
 
