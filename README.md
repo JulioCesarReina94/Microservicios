@@ -42,9 +42,7 @@ Algunos de los comandos más utilizados en Docker son:
 
 -docker inspect <friendly-name|container-id> . para saber acerca del contenedor
 
--docker logs <friendly-name|container-id>
-
-comandos para el contenedor.
+-docker logs <friendly-name|container-id> Comandos para el contenedor.
 
 -docker start: Iniciar uno o más contenedores detenidos.
 
@@ -62,15 +60,16 @@ Un API Gateway proporciona un punto central de acceso a todos los clientes para 
 
 #### KONG (Edge Service)
 
-Kong es una API Gateway encargada de unificar la publicación de APIs para que sean consumidas por otras aplicaciones o por los desarrolladores.
+- Kong es una API Gateway encargada de unificar la publicación de APIs para que sean consumidas por otras aplicaciones o por los desarrolladores.
 
--Kong Server: Es la pieza que hace de proxy de todas las peticiones. Consta de una capa pública por la cual le llegan las peticiones para acceder a las APIs que expone y otra privada para la administración y configuración de las mismas. Además nos permite habilitar, deshabilitar y configurar los plugins instalados.
+- Kong Server: Es la pieza que hace de proxy de todas las peticiones. Consta de una capa pública por la cual le llegan las peticiones para acceder a las APIs que expone y otra privada para la administración y configuración de las mismas. Además nos permite habilitar, deshabilitar y configurar los plugins instalados.
 
--Kong Datastore: Es una base de datos externa que sirve como almacenamiento de todas las configuraciones de Kong y sus plugins o APIs. Los datastore soportados por defecto son Cassandra y PostgreSQL.
+- Kong Datastore: Es una base de datos externa que sirve como almacenamiento de todas las configuraciones de Kong y sus plugins o APIs. Los datastore soportados por defecto son Cassandra y PostgreSQL.
 
 ![FIGURA 15](Imagenes/Figura15.png)
 
 ### Tyk
+
 Tyk es un API Gateway open-source que nació en 2014. Tyk está desarrollado en Golang y utiliza el servidor HTTP del propio lenguaje.
 Si queremos utilizar Tyk disponemos de varias opciones: Cloud, Hybrid (GW en infraestructura propia) y On-Premises.
 Existen varias formas de instalar Tyk: paquetería estándar de Ubuntu y RHEL, tarball o contenedor de Docker.
