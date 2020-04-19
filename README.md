@@ -24,6 +24,8 @@ Flask es auto denominado como un microframework de python para crear aplicacione
 
 ### DOCKER
 
+Docker es una plataforma de software que le permite crear, probar e implementar aplicaciones rápidamente. Docker empaqueta software en unidades estandarizadas llamadas contenedores que incluyen todo lo necesario para que el software se ejecute, incluidas bibliotecas, herramientas de sistema, código y tiempo de ejecución. Con Docker, puede implementar y ajustar la escala de aplicaciones rápidamente en cualquier entorno con la certeza de saber que su código se ejecutará.
+
 -	Comando Run (Opciones) (-d, -p)
 
 ### KONG
@@ -142,4 +144,6 @@ Figura 14. Contenedores creados en Docker
 
 
 Referencias Web
+https://blog.mdcloud.es/que-son-los-microservicios-definicion-caracteristicas-y-retos/
+https://aws.amazon.com/es/docker/
 http://www.arquitectoit.com/postman/que-es-postman/
