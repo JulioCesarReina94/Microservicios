@@ -23,6 +23,7 @@ Flask es auto denominado como un microframework de python para crear aplicacione
 ### KONG
 
 ### POSTMAN
+Es una herramienta que nos permite crear peticiones sobre APIs de una forma muy sencilla y poder, de esta manera, probar las APIs. Todo basado en una extensión de Google Chrome. El usuario de Postman puede ser un desarrollador que esté comprobando el funcionamiento de una API para desarrollar sobre ella o un operador el cual esté realizando tareas de mnonitorización sobre un API.
 
 ## 	2. INSTALACION
 
