@@ -56,7 +56,7 @@ Kong es una API Gateway encargada de unificar la publicación de APIs para que s
 -Kong Server: Es la pieza que hace de proxy de todas las peticiones. Consta de una capa pública por la cual le llegan las peticiones para acceder a las APIs que expone y otra privada para la administración y configuración de las mismas. Además nos permite habilitar, deshabilitar y configurar los plugins instalados.
 
 -Kong Datastore: Es una base de datos externa que sirve como almacenamiento de todas las configuraciones de Kong y sus plugins o APIs. Los datastore soportados por defecto son Cassandra y PostgreSQL.
-
+![FIGURA 1](Imagenes/Figura1.png)
 
 ### POSTMAN
 
