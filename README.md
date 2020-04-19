@@ -60,9 +60,9 @@ Algunos de los comandos más utilizados en Docker son:
 
 Un API Gateway proporciona un punto central de acceso a todos los clientes para gestionar, supervisar y asegurar el acceso a los servicios backend expuestos, que ofrecen los productos digitales.
 
-#### KONG (Edge Service)
+#### KONG
 
-- Kong es una API Gateway encargada de unificar la publicación de APIs para que sean consumidas por otras aplicaciones o por los desarrolladores.
+Kong es una API Gateway encargada de unificar la publicación de APIs para que sean consumidas por otras aplicaciones o por los desarrolladores.
 
 - Kong Server: Es la pieza que hace de proxy de todas las peticiones. Consta de una capa pública por la cual le llegan las peticiones para acceder a las APIs que expone y otra privada para la administración y configuración de las mismas. Además nos permite habilitar, deshabilitar y configurar los plugins instalados.
 
@@ -85,25 +85,25 @@ Tyk está compuesto por 3 piezas:
 
 ### BALANCEO DE CARGA 
 
-#### Kong: 
+#### kONG
 
 Kong proporciona múltiples formas de solicitudes de equilibrio de carga a múltiples servicios de back-end: un método directo basado en DNS y un equilibrador de anillo más dinámico que también permite el registro del servicio sin necesidad de un servidor DNS
 
-#### Ribbon: 
+#### RIBBON 
 
 Parte del stack tecnológico de Netflix OSS. El cual permite realizar el balanceo de carga por medio de Eureka.
 
-#### Nginx: 
+#### NGIX 
 
 Pronunciado como “engine-ex”, es un servidor web de código abierto que, desde su éxito inicial como servidor web, ahora también es usado como proxy inverso, caché de HTTP, y balanceador de carga.
 
-### Centralización de logs
+### CENTRALIZACION DE LOGS 
 
-#### Fluentd
+#### FLUENTD
 
 Es un recolector de datos, es decir, se dedica a buscar y recoger toda la información que generan las diferentes aplicaciones de tu sistema. Su principal característica es la conexión de distintas fuentes de datos con múltiples destinos (desde bases de datos a servicios web, otros ficheros, etc.).
 
-#### Graylog
+#### GRAYLOG
 
 Es una solución de software de código abierto para el almacenamiento y visualización de los logs generados. Permite, además, realizar consultas sobre los datos, crear cuadros de mando, alarmas y muchas otras funcionalidades interesantes en entornos de TI y programación. Se compone de tres componentes fundamentales:
 
@@ -119,8 +119,9 @@ Es una solución de software de código abierto para el almacenamiento y visuali
 
 Es un plugin de kong que permite implementar el servicio de autorización, este permite verificar las credenciales válidas en el encabezado, es compatible con solicitudes de los protocolos http y https.
 
+### CLIENTE
 
-### POSTMAN(Cliente)
+### POSTMAN 
 
 Es una herramienta que nos permite crear peticiones sobre APIs de una forma muy sencilla y poder, de esta manera, probar las APIs. Todo basado en una extensión de Google Chrome. El usuario de Postman puede ser un desarrollador que esté comprobando el funcionamiento de una API para desarrollar sobre ella o un operador el cual esté realizando tareas de mnonitorización sobre un API.
 
