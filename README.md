@@ -10,7 +10,7 @@ Andres Lozano          20201099038
 
 
 ## 1. DEFINICIONES
-### ¿Que es un Microservicio?
+### MICROSERVICIOS
 
 Según James Lewis y Martin Fowler (los creadores del concepto) los microservicios son un enfoque para desarrollar una única aplicación como un conjunto de pequeños servicios, cada uno ejecutándose en su propio proceso y comunicándose con mecanismos ligeros, a menudo una API a través de HTTP.
 
@@ -68,7 +68,7 @@ Un API Gateway proporciona un punto central de acceso a todos los clientes para 
 
 ![FIGURA 15](Imagenes/Figura15.png)
 
-### Tyk
+#### TYK
 
 Tyk es un API Gateway open-source que nació en 2014. Tyk está desarrollado en Golang y utiliza el servidor HTTP del propio lenguaje.
 Si queremos utilizar Tyk disponemos de varias opciones: Cloud, Hybrid (GW en infraestructura propia) y On-Premises.
@@ -89,7 +89,7 @@ Ribbon: Parte del stack tecnológico de Netflix OSS. El cual permite realizar el
 
 Nginx: pronunciado como “engine-ex”, es un servidor web de código abierto que, desde su éxito inicial como servidor web, ahora también es usado como proxy inverso, caché de HTTP, y balanceador de carga.
 
-### Centralización de logs
+#### Centralización de logs
 
 Fluentd
 
