@@ -13,4 +13,4 @@ Andres Lozano     20201099038
 
 #¿Que es Flask?
 
-Flask es auto denominado como un microframework de python para crear aplicaciones web, es decir, páginas web dinamicas, APIs, etc ... Aquí lo interesante es la palabra microframework.
+Flask es auto denominado como un microframework de python para crear aplicaciones web, es decir, páginas web dinamicas, APIs, etc .
