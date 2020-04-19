@@ -168,26 +168,26 @@ Así pues, en este archivo se define principalmente un sistema operativo Linux, 
 
 ![FIGURA 4](Imagenes/Figura4.png)
 
-Figura 4. Archivo Dockerfile
+Figura 5. Archivo Dockerfile
 
 También es necesario instalar los componentes necesarios para correr la aplicación, para el caso Flask, es por esto que se debe crear un archivo llamado requeriments.txt y ejecutarlo. Una vez que todo esta instalo se procede a correr la aplicación con el comando CMD.
 
 ![FIGURA 5](Imagenes/Figura5.png)
 
-Figura 5. Archivo requeriments.txt
+Figura 6. Archivo requeriments.txt
 
 Una vez, ya se tiene todo configurado, se procede a generar la imagen en Docker a través del siguiente comando:
 
 ![FIGURA 6](Imagenes/Figura6.png)
 
-Figura 6. Comando generación de imagen en Docker
+Figura 7. Comando generación de imagen en Docker
 
 Este comando creara una nueva imagen y realizara todos los pasos o sentencia definidos en el archivo Dockerfile. Enseguida se debe ejecutar la imagen creada, esto a través del comando:
 
 
 ![FIGURA 7](Imagenes/Figura7.png)
 
-Figura 7. Comando ejecución imagen en Docker
+Figura 8. Comando ejecución imagen en Docker
 
 Se debe resaltar que en este comando se define el nombre de la imagen, y además con que puerto se quiere relacionar, es decir, en el contenedor la aplicación se expondrá en el puerto 100, pero en nuestra maquina local no tenemos acceso a este, por lo cual se debe relacionar. Para el caso se relaciona el puerto 100 con el puerto 100. 
 Si todo se ejecuta correctamente tendremos un nuevo contenedor y podremos probar el servicio publicado, para el caso se puede utilizar el software Postman:
@@ -195,12 +195,12 @@ Si todo se ejecuta correctamente tendremos un nuevo contenedor y podremos probar
 
 ![FIGURA 8](Imagenes/Figura8.png)
 
-Figura 8. Contenedor en Docker para el servicio de multiplicación.
+Figura 9. Contenedor en Docker para el servicio de multiplicación.
 
 
 ![FIGURA 9](Imagenes/Figura9.png)
 
-Figura 9. Servicio que cumple la función de multiplicar.
+Figura 10. Servicio que cumple la función de multiplicar.
 
 Así pues, ya se tiene el servicio de multiplicar expuesto y funcionando. Para crear los servicios de las demás operaciones matemáticas se debe hacer el mismo procedimiento con los demás archivos, configurando en el archivo Dockerfile, la aplicación que se quiere iniciar, y teniendo en cuenta los puertos de exposición. 
 
@@ -208,7 +208,7 @@ Para el caso se creó el contenedor división expuesto en el puerto 70, multipli
 
 
 ![FIGURA 10](Imagenes/Figura10.png)
-Figura 10. Contenedores creados en Docker.
+Figura 11. Contenedores creados en Docker.
 
 
 ###	CONFIGURACION KONG
@@ -217,31 +217,31 @@ Para la configuración de Kong se utilizó el software KongDash, esto con el fin
 
 ![FIGURA 11](Imagenes/Figura11.png)
 
-Figura 11. Creación de api en Kong.
+Figura 12. Creación de api en Kong.
 
 Una vez configurado se procede a probar el servicio desde el Gateway, para el caso el host es localhost, el puerto 8000 y la URI definida
 
 
 ![FIGURA 12](Imagenes/Figura12.png)
 
-Figura 12. Prueba servicio multiplicación desde el Gateway
+Figura 13. Prueba servicio multiplicación desde el Gateway
 
 Teniendo una prueba satisfactoria, se procede a crear las Apis para los demás servicios en Kong
  
 
 ![FIGURA 13](Imagenes/Figura13.png)
-Figura 13. Apis creadas en Kong
+Figura 14. Apis creadas en Kong
 
 Para finalizar se podrá ver todos los contenedores en Docker funcionado correctamente
 
 ![FIGURA 14](Imagenes/Figura14.png) 
-Figura 14. Contenedores creados en Docker
+Figura 15. Contenedores creados en Docker
 
 Conclusiones
 
 - En su mayoria las aplicaciones basadas en microservicios deberían consumirse mediante una API Gateway, para que interactúe como un único punto de entrada en el conjunto de microservicios, enrutando las solicitudes y la traducción de protocolos.
 
-- 
+
 
 Referencias Web
 
@@ -253,5 +253,7 @@ Referencias Web
 - https://danielcastanera.com/comandos-utiles-en-docker/docker 
 
 - http://www.arquitectoit.com/postman/que-es-postman/
+
+- https://www.bbva.com/es/tyk-kong-analizamos-estos-dos-api-gateways/
 
 - https://medium.com/@jovaniarzate/apis-y-microservicios-en-empresas-monol%C3%ADticas-api-gateway-y-management-6-69ba6dd0080c
