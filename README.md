@@ -153,8 +153,11 @@ Conclusiones
 
 Referencias Web
 
+
 - https://blog.mdcloud.es/que-son-los-microservicios-definicion-caracteristicas-y-retos/
 
 - https://aws.amazon.com/es/docker/
 
 - http://www.arquitectoit.com/postman/que-es-postman/
+
+- https://medium.com/@jovaniarzate/apis-y-microservicios-en-empresas-monol%C3%ADticas-api-gateway-y-management-6-69ba6dd0080c
