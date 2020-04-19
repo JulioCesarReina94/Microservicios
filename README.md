@@ -26,9 +26,37 @@ Flask es auto denominado como un microframework de python para crear aplicacione
 
 Docker es una plataforma de software que le permite crear, probar e implementar aplicaciones rápidamente. Docker empaqueta software en unidades estandarizadas llamadas contenedores que incluyen todo lo necesario para que el software se ejecute, incluidas bibliotecas, herramientas de sistema, código y tiempo de ejecución. Con Docker, puede implementar y ajustar la escala de aplicaciones rápidamente en cualquier entorno con la certeza de saber que su código se ejecutará.
 
--	Comando Run (Opciones) (-d, -p)
+Algunos de los comandos más utilizados en Docker son:
 
-### KONG
+-docker pull NOMBREIMAGEN. Este comando sirve para descargar una imagen 
+-docker images  muestra imágenes que tenemos descargadas)
+-docker ps -a    muestra que contenedores están funcionando
+-docker rmi  IMAGE_ID  Elimina (y desmarca) una o más imágenes del nodo host.
+-docker info  Muestra información de las imágenes, tamaño, fecha creación  nombre...
+-docker search NAME   para buscar in docker
+-docker inspect <friendly-name|container-id> . para saber acerca del contenedor
+-docker logs <friendly-name|container-id>
+
+comandos para el contenedor.
+
+-docker start: Iniciar uno o más contenedores detenidos
+-docker stop: Detener uno o más contenedores en ejecución
+-docker kill: Mata uno o más contenedores en funcionamiento
+-docker rm: Retira uno o más contenedores.
+-docker run : ejecuta el proceso de contenedor. Para iniciar un contenedor en segundo plano, use simplemente la -d opción.
+
+### API GATEWAY
+
+Un API Gateway proporciona un punto central de acceso a todos los clientes para gestionar, supervisar y asegurar el acceso a los servicios backend expuestos, que ofrecen los productos digitales.
+
+#### KONG (Edge Service)
+
+Kong es una API Gateway encargada de unificar la publicación de APIs para que sean consumidas por otras aplicaciones o por los desarrolladores.
+
+-Kong Server: Es la pieza que hace de proxy de todas las peticiones. Consta de una capa pública por la cual le llegan las peticiones para acceder a las APIs que expone y otra privada para la administración y configuración de las mismas. Además nos permite habilitar, deshabilitar y configurar los plugins instalados.
+
+-Kong Datastore: Es una base de datos externa que sirve como almacenamiento de todas las configuraciones de Kong y sus plugins o APIs. Los datastore soportados por defecto son Cassandra y PostgreSQL.
+
 
 ### POSTMAN
 
@@ -157,6 +185,8 @@ Referencias Web
 - https://blog.mdcloud.es/que-son-los-microservicios-definicion-caracteristicas-y-retos/
 
 - https://aws.amazon.com/es/docker/
+
+- https://danielcastanera.com/comandos-utiles-en-docker/docker 
 
 - http://www.arquitectoit.com/postman/que-es-postman/
 
