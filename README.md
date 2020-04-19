@@ -142,8 +142,10 @@ Para finalizar se podrá ver todos los contenedores en Docker funcionado correct
 ![FIGURA 14](Imagenes/Figura14.png) 
 Figura 14. Contenedores creados en Docker
 
+Conclusiones
 
 Referencias Web
+
 https://blog.mdcloud.es/que-son-los-microservicios-definicion-caracteristicas-y-retos/
 
 https://aws.amazon.com/es/docker/
