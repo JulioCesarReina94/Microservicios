@@ -28,31 +28,31 @@ Docker es una plataforma de software que le permite crear, probar e implementar 
 
 Algunos de los comandos más utilizados en Docker son:
 
--docker pull NOMBREIMAGEN. Este comando sirve para descargar una imagen
+- docker pull NOMBREIMAGEN. Este comando sirve para descargar una imagen
 
--docker images  muestra imágenes que tenemos descargadas)
+- docker images  muestra imágenes que tenemos descargadas)
 
--docker ps -a    muestra que contenedores están funcionando
+- docker ps -a    muestra que contenedores están funcionando
 
--docker rmi  IMAGE_ID  Elimina (y desmarca) una o más imágenes del nodo host.
+- docker rmi  IMAGE_ID  Elimina (y desmarca) una o más imágenes del nodo host.
 
--docker info  Muestra información de las imágenes, tamaño, fecha creación  nombre...
+- docker info  Muestra información de las imágenes, tamaño, fecha creación  nombre...
 
--docker search NAME   para buscar in docker
+- docker search NAME   para buscar in docker
 
--docker inspect <friendly-name|container-id> . para saber acerca del contenedor
+- docker inspect <friendly-name|container-id> . para saber acerca del contenedor
 
--docker logs <friendly-name|container-id> Comandos para el contenedor.
+- docker logs <friendly-name|container-id> Comandos para el contenedor.
 
--docker start: Iniciar uno o más contenedores detenidos.
+- docker start: Iniciar uno o más contenedores detenidos.
 
--docker stop: Detener uno o más contenedores en ejecución.
+- docker stop: Detener uno o más contenedores en ejecución.
 
--docker kill: Mata uno o más contenedores en funcionamiento.
+- docker kill: Mata uno o más contenedores en funcionamiento.
 
--docker rm: Retira uno o más contenedores.
+- docker rm: Retira uno o más contenedores.
 
--docker run : ejecuta el proceso de contenedor. Para iniciar un contenedor en segundo plano, use simplemente la -d opción.
+- docker run : ejecuta el proceso de contenedor. Para iniciar un contenedor en segundo plano, use simplemente la -d opción.
 
 ### API GATEWAY
 
