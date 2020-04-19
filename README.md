@@ -144,6 +144,8 @@ Figura 14. Contenedores creados en Docker
 
 Conclusiones
 
+En su mayoria las aplicaciones basadas en microservicios deberían consumirse mediante una API Gateway, para que interactúe como un único punto de entrada en el conjunto de microservicios, enrutando las solicitudes y la traducción de protocolos. 
+
 Referencias Web
 
 https://blog.mdcloud.es/que-son-los-microservicios-definicion-caracteristicas-y-retos/
