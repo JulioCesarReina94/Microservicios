@@ -31,7 +31,12 @@ Docker es una plataforma de software que le permite crear, probar e implementar 
 ### KONG
 
 ### POSTMAN
+
 Es una herramienta que nos permite crear peticiones sobre APIs de una forma muy sencilla y poder, de esta manera, probar las APIs. Todo basado en una extensión de Google Chrome. El usuario de Postman puede ser un desarrollador que esté comprobando el funcionamiento de una API para desarrollar sobre ella o un operador el cual esté realizando tareas de mnonitorización sobre un API.
+
+### API GATEWAY
+
+Un API Gateway proporciona un punto central de acceso a todos los clientes para gestionar, supervisar y asegurar el acceso a los servicios backend expuestos, que ofrecen nuestros productos digitales.
 
 ## 	2. INSTALACION
 
@@ -144,12 +149,12 @@ Figura 14. Contenedores creados en Docker
 
 Conclusiones
 
-En su mayoria las aplicaciones basadas en microservicios deberían consumirse mediante una API Gateway, para que interactúe como un único punto de entrada en el conjunto de microservicios, enrutando las solicitudes y la traducción de protocolos. 
+- En su mayoria las aplicaciones basadas en microservicios deberían consumirse mediante una API Gateway, para que interactúe como un único punto de entrada en el conjunto de microservicios, enrutando las solicitudes y la traducción de protocolos.
 
 Referencias Web
 
-https://blog.mdcloud.es/que-son-los-microservicios-definicion-caracteristicas-y-retos/
+- https://blog.mdcloud.es/que-son-los-microservicios-definicion-caracteristicas-y-retos/
 
-https://aws.amazon.com/es/docker/
+- https://aws.amazon.com/es/docker/
 
-http://www.arquitectoit.com/postman/que-es-postman/
+- http://www.arquitectoit.com/postman/que-es-postman/
