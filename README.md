@@ -38,6 +38,7 @@ Una vez creada, podemos ejecutar el comando para instalar Kong:
 Si todo a salido bien, en el dashboard de Docker se podrán visualizar los dos contenedores
 
 ![FIGURA 1](Imagenes/Figura1.png)
+
 Figura 1.  Contenedores para Kong y su base de datos en Docker
 
 
