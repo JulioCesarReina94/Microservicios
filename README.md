@@ -77,15 +77,15 @@ Si queremos utilizar Tyk disponemos de varias opciones: Cloud, Hybrid (GW en inf
 Existen varias formas de instalar Tyk: paquetería estándar de Ubuntu y RHEL, tarball o contenedor de Docker.
 Tyk está compuesto por 3 piezas:
 
--Gateway: El proxy por el que pasa todo el tráfico de nuestras aplicaciones.
+- Gateway: El proxy por el que pasa todo el tráfico de nuestras aplicaciones.
 
--Dashboard: La interfaz desde la cual podemos administrar Tyk, visualizar las métricas y organizar las API.
+- Dashboard: La interfaz desde la cual podemos administrar Tyk, visualizar las métricas y organizar las API.
 
--Pump: Es el encargado de persistir los datos de las métricas y exportarlas a MongoDB (instalación de serie), ElasticSearch, InfluxDB entre otros.
+- Pump: Es el encargado de persistir los datos de las métricas y exportarlas a MongoDB (instalación de serie), ElasticSearch, InfluxDB entre otros.
 
 ### BALANCEO DE CARGA 
 
-#### kONG
+#### KONG
 
 Kong proporciona múltiples formas de solicitudes de equilibrio de carga a múltiples servicios de back-end: un método directo basado en DNS y un equilibrador de anillo más dinámico que también permite el registro del servicio sin necesidad de un servidor DNS
 
@@ -93,7 +93,7 @@ Kong proporciona múltiples formas de solicitudes de equilibrio de carga a múlt
 
 Parte del stack tecnológico de Netflix OSS. El cual permite realizar el balanceo de carga por medio de Eureka.
 
-#### NGIX 
+#### NGINX
 
 Pronunciado como “engine-ex”, es un servidor web de código abierto que, desde su éxito inicial como servidor web, ahora también es usado como proxy inverso, caché de HTTP, y balanceador de carga.
 
