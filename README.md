@@ -84,7 +84,7 @@ Tyk está compuesto por 3 piezas:
 
 #### Balanceo de carga (Load balancer)
 
-
+Kong: Kong proporciona múltiples formas de solicitudes de equilibrio de carga a múltiples servicios de back-end: un método directo basado en DNS y un equilibrador de anillo más dinámico que también permite el registro del servicio sin necesidad de un servidor DNS
 
 Ribbon: Parte del stack tecnológico de Netflix OSS. El cual permite realizar el balanceo de carga por medio de Eureka.
 
@@ -201,8 +201,8 @@ Para el caso se creó el contenedor división expuesto en el puerto 70, multipli
 Figura 10. Contenedores creados en Docker.
 
 
-
 ###	CONFIGURACION KONG
+
 Para la configuración de Kong se utilizó el software KongDash, esto con el fin de hacerlo más gráfico y visual. En este software se procede a configurar cada una de las Apis a gestionar. Así pues, para teniendo en cuenta el api de multiplicación se define un nombre, el host donde se expondrá y la URI y Upstream URL a donde se redireccionará las peticiones, como se puede ver en la imagen.
 
 ![FIGURA 11](Imagenes/Figura11.png)
