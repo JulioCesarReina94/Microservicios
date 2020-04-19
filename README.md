@@ -82,13 +82,41 @@ Tyk está compuesto por 3 piezas:
 
 -Pump: Es el encargado de persistir los datos de las métricas y exportarlas a MongoDB (instalación de serie), ElasticSearch, InfluxDB entre otros.
 
-### POSTMAN
+#### Balanceo de carga (Load balancer)
+
+
+
+Ribbon: Parte del stack tecnológico de Netflix OSS. El cual permite realizar el balanceo de carga por medio de Eureka.
+
+Nginx: pronunciado como “engine-ex”, es un servidor web de código abierto que, desde su éxito inicial como servidor web, ahora también es usado como proxy inverso, caché de HTTP, y balanceador de carga.
+
+### Centralización de logs
+
+Fluentd
+
+Es un recolector de datos, es decir, se dedica a buscar y recoger toda la información que generan las diferentes aplicaciones de tu sistema. Su principal característica es la conexión de distintas fuentes de datos con múltiples destinos (desde bases de datos a servicios web, otros ficheros, etc.).
+
+Graylog
+
+Es una solución de software de código abierto para el almacenamiento y visualización de los logs generados. Permite, además, realizar consultas sobre los datos, crear cuadros de mando, alarmas y muchas otras funcionalidades interesantes en entornos de TI y programación. Se compone de tres componentes fundamentales:
+
+- Mongo DB: Es el almacén de configuraciones y metadatos.
+
+- ElasticSearch: Actúa como motor de búsquedas y almacenamiento.
+
+- Graylog Server: Es el propio servidor de Graylog que incluye todas sus funcionalidades y una interfaz de usuario web (Graylog UI).
+
+### Servidor de Autorización
+
+Plugin LDAP Authentication (KONG)
+
+Es un plugin de kong que permite implementar el servicio de autorización, este permite verificar las credenciales válidas en el encabezado, es compatible con solicitudes de los protocolos http y https.
+
+
+### POSTMAN(Cliente)
 
 Es una herramienta que nos permite crear peticiones sobre APIs de una forma muy sencilla y poder, de esta manera, probar las APIs. Todo basado en una extensión de Google Chrome. El usuario de Postman puede ser un desarrollador que esté comprobando el funcionamiento de una API para desarrollar sobre ella o un operador el cual esté realizando tareas de mnonitorización sobre un API.
 
-### API GATEWAY
-
-Un API Gateway proporciona un punto central de acceso a todos los clientes para gestionar, supervisar y asegurar el acceso a los servicios backend expuestos, que ofrecen nuestros productos digitales.
 
 ## 	2. INSTALACION
 
