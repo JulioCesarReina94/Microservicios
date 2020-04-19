@@ -70,6 +70,8 @@ Kong es una API Gateway encargada de unificar la publicación de APIs para que s
 
 ![FIGURA 15](Imagenes/Figura15.png)
 
+Figura 1.  Estructura Api Gateway -Kong 
+
 #### TYK
 
 Tyk es un API Gateway open-source que nació en 2014. Tyk está desarrollado en Golang y utiliza el servidor HTTP del propio lenguaje.
@@ -121,7 +123,7 @@ Es un plugin de kong que permite implementar el servicio de autorización, este 
 
 ### CLIENTE
 
-### POSTMAN 
+#### POSTMAN 
 
 Es una herramienta que nos permite crear peticiones sobre APIs de una forma muy sencilla y poder, de esta manera, probar las APIs. Todo basado en una extensión de Google Chrome. El usuario de Postman puede ser un desarrollador que esté comprobando el funcionamiento de una API para desarrollar sobre ella o un operador el cual esté realizando tareas de mnonitorización sobre un API.
 
@@ -142,7 +144,7 @@ Si todo a salido bien, en el dashboard de Docker se podrán visualizar los dos c
 
 ![FIGURA 1](Imagenes/Figura1.png)
 
-Figura 1.  Contenedores para Kong y su base de datos en Docker
+Figura 2.  Contenedores para Kong y su base de datos en Docker
 
 
 ###	API CON FLASK
@@ -152,14 +154,14 @@ En este archivo, también se define el host y el puerto a través del cual el se
 
 ![FIGURA 2](Imagenes/Figura2.png)
 
-Figura 2. Archivo Multiplicacion.py
+Figura 3. Archivo Multiplicacion.py
 
 Es importante resaltar que se debe tener un archivo para cada uno de los servicios que se quiere exponer, en donde solo varia el nombre de la ruta, la lógica del servicio y el puerto en donde se quiere desplegar, como se puede visualizar en la siguiente imagen:
 
 
 ![FIGURA 3](Imagenes/Figura3.png)
 
-Figura 3. Archivo Resta.py
+Figura 4. Archivo Resta.py
 
 Una vez que ya se tienen los servicios a desplegar se procede a crear un archivo llamado Dockerfile, un archivo de texto plano que contiene las instrucciones necesarias para automatizar la creación de una imagen que será utilizada posteriormente para la ejecución de instancias específicas.
 Así pues, en este archivo se define principalmente un sistema operativo Linux, para el caso es Alpine en su versión 3.10, enseguida se ejecuta el administrador de paquetes apk para agregar o instalar Python y de igual forma pip. Para se mas automático el proceso, se crea una carpeta o directorio llamada app, en ella se copia todos los archivos utilizados. 
