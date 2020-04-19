@@ -1,13 +1,16 @@
 Integrantes: 
 
 Julio Cesar Reina
+
 Cristian Gonzales
-Andres Lozano
+
+Andres Lozano     20201099038
 
 # Microservicios
 
 
-¿Que es un Microservicio?
+#¿Que es un Microservicio?
 
-¿Que es Flask?
+#¿Que es Flask?
+
 Flask es auto denominado como un microframework de python para crear aplicaciones web, es decir, páginas web dinamicas, APIs, etc ... Aquí lo interesante es la palabra microframework.
