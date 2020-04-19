@@ -58,6 +58,16 @@ Kong es una API Gateway encargada de unificar la publicación de APIs para que s
 -Kong Datastore: Es una base de datos externa que sirve como almacenamiento de todas las configuraciones de Kong y sus plugins o APIs. Los datastore soportados por defecto son Cassandra y PostgreSQL.
 ![FIGURA 15](Imagenes/Figura15.png)
 
+### Tyk
+Tyk es un API Gateway open-source que nació en 2014. Tyk está desarrollado en Golang y utiliza el servidor HTTP del propio lenguaje.
+Si queremos utilizar Tyk disponemos de varias opciones: Cloud, Hybrid (GW en infraestructura propia) y On-Premises.
+Existen varias formas de instalar Tyk: paquetería estándar de Ubuntu y RHEL, tarball o contenedor de Docker.
+Tyk está compuesto por 3 piezas:
+
+-Gateway: El proxy por el que pasa todo el tráfico de nuestras aplicaciones.
+-Dashboard: La interfaz desde la cual podemos administrar Tyk, visualizar las métricas y organizar las API.
+-Pump: Es el encargado de persistir los datos de las métricas y exportarlas a MongoDB (instalación de serie), ElasticSearch, InfluxDB entre otros.
+
 ### POSTMAN
 
 Es una herramienta que nos permite crear peticiones sobre APIs de una forma muy sencilla y poder, de esta manera, probar las APIs. Todo basado en una extensión de Google Chrome. El usuario de Postman puede ser un desarrollador que esté comprobando el funcionamiento de una API para desarrollar sobre ella o un operador el cual esté realizando tareas de mnonitorización sobre un API.
