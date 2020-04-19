@@ -28,21 +28,32 @@ Docker es una plataforma de software que le permite crear, probar e implementar 
 
 Algunos de los comandos más utilizados en Docker son:
 
--docker pull NOMBREIMAGEN. Este comando sirve para descargar una imagen 
+-docker pull NOMBREIMAGEN. Este comando sirve para descargar una imagen
+
 -docker images  muestra imágenes que tenemos descargadas)
+
 -docker ps -a    muestra que contenedores están funcionando
+
 -docker rmi  IMAGE_ID  Elimina (y desmarca) una o más imágenes del nodo host.
+
 -docker info  Muestra información de las imágenes, tamaño, fecha creación  nombre...
+
 -docker search NAME   para buscar in docker
+
 -docker inspect <friendly-name|container-id> . para saber acerca del contenedor
+
 -docker logs <friendly-name|container-id>
 
 comandos para el contenedor.
 
--docker start: Iniciar uno o más contenedores detenidos
--docker stop: Detener uno o más contenedores en ejecución
--docker kill: Mata uno o más contenedores en funcionamiento
+-docker start: Iniciar uno o más contenedores detenidos.
+
+-docker stop: Detener uno o más contenedores en ejecución.
+
+-docker kill: Mata uno o más contenedores en funcionamiento.
+
 -docker rm: Retira uno o más contenedores.
+
 -docker run : ejecuta el proceso de contenedor. Para iniciar un contenedor en segundo plano, use simplemente la -d opción.
 
 ### API GATEWAY
@@ -56,6 +67,7 @@ Kong es una API Gateway encargada de unificar la publicación de APIs para que s
 -Kong Server: Es la pieza que hace de proxy de todas las peticiones. Consta de una capa pública por la cual le llegan las peticiones para acceder a las APIs que expone y otra privada para la administración y configuración de las mismas. Además nos permite habilitar, deshabilitar y configurar los plugins instalados.
 
 -Kong Datastore: Es una base de datos externa que sirve como almacenamiento de todas las configuraciones de Kong y sus plugins o APIs. Los datastore soportados por defecto son Cassandra y PostgreSQL.
+
 ![FIGURA 15](Imagenes/Figura15.png)
 
 ### Tyk
@@ -65,7 +77,9 @@ Existen varias formas de instalar Tyk: paquetería estándar de Ubuntu y RHEL, t
 Tyk está compuesto por 3 piezas:
 
 -Gateway: El proxy por el que pasa todo el tráfico de nuestras aplicaciones.
+
 -Dashboard: La interfaz desde la cual podemos administrar Tyk, visualizar las métricas y organizar las API.
+
 -Pump: Es el encargado de persistir los datos de las métricas y exportarlas a MongoDB (instalación de serie), ElasticSearch, InfluxDB entre otros.
 
 ### POSTMAN
