@@ -32,7 +32,7 @@ Algunos de los comandos más utilizados en Docker son:
 
 - docker pull NOMBREIMAGEN. Este comando sirve para descargar una imagen
 
-- docker images  muestra imágenes que tenemos descargadas)
+- docker images  muestra imágenes que tenemos descargadas
 
 - docker ps -a    muestra que contenedores están funcionando
 
