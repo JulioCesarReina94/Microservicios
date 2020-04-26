@@ -69,7 +69,7 @@ Kong es una API Gateway encargada de unificar la publicación de APIs para que s
 - Kong Datastore: Es una base de datos externa que sirve como almacenamiento de todas las configuraciones de Kong y sus plugins o APIs. Los datastore soportados por defecto son Cassandra y PostgreSQL.
 
 ![FIGURA 15](Imagenes/Figura15.png)
-<img align="left" width="100" height="100" src="![FIGURA 15](Imagenes/Figura15.png)">
+
 
 Figura 1.  Estructura Api Gateway -Kong 
 
